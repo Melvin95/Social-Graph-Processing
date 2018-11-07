@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>COMP301</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+	/* For demo purpose only */
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+	#colour-variations li a[data-theme="style"] {
+		background: #6173f4;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #f64662;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2185d5;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #00b8a9;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #ff6600;
+	}
+	#colour-variations li a[data-theme="lightblue"] {
+		background: #5585b5;
+	}
+	#colour-variations li a[data-theme="brown"] {
+		background: #a03232;
+	}
+	#colour-variations li a[data-theme="green"] {
+		background: #65d269;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		          	<a class="navbar-brand" href="index.html">COMP301</a> 
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>Project</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>Links</span></a></li>
+		            <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+		  
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+
+	<div id="slider" data-section="home">
+		<div class="owl-carousel owl-carousel-fullwidth">
+			<!-- You may change the background color here. -->
+		    <div class="item" style="background: #352f44;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+					    <div class="col-md-7 col-sm-7">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">UBER</h1>
+									<h2 class="fh5co-sub-lead to-animate">With much controversy, Uber remains the globally leading ride-sharing platform</h3>
+									<p class="to-animate-2"><a href="https://en.wikipedia.org/wiki/Uber_(company)" class="btn btn-primary btn-lg">Find Out More</a></p>
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/iphone-2.png" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div>
+			<!-- You may change the background color here.  -->
+		    <div class="item" style="background: #38569f;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+		    			<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">Taxify</h1>
+									<h2 class="fh5co-sub-lead to-animate">The underdog. One of Uber's many rivals.</h3>
+									<p class="to-animate-2"><a href="https://en.wikipedia.org/wiki/Taxify" class="btn btn-primary btn-lg">Find Out More</a></p>
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/iphone-1.png" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div>
+
+		    <div class="item" style="background-image:url(images/slide_5.jpg)">
+		    	<div class="overlay"></div>
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2 text-center">
+		    				<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+		    						<h1 class="fh5co-lead to-animate">Making Sense of Twitter Data</h1>
+									<h2 class="fh5co-sub-lead to-animate">Using the Social Graph to quantify and analyze marketing footprints</h3>
+								</div>
+							</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+
+		</div>
+	</div>
+	
+	<div id="fh5co-about-us" data-section="about">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">About The Project</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>Using the Social Graph to quantify and analyze social media data</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 to-animate">
+					<img src="images/img_1.jpg" class="img-responsive img-rounded" alt="Free HTML5 Template">
+				</div>
+				<div class="col-md-4 to-animate">
+					<h2>The Problem</h2>
+					<p>Uber, although incredibly successful and dominating the digital ride-sharing industry, has been overwhelmed with controversy since its inception. The company has had no shortage of both internal and external issues. These issues have usually leaked onto mainstream media over and has occasionally caused outrage from the public.</p>
+
+<p>Many people choose to express their outrage on Twitter. The popular social media network has had numerous ‘trends’ related to Uber controversy (http://fortune.com/2017/06/21/uber-controversy-timeline-travis-kalanick) as well as in South Africa (http://fortune.com/2017/04/24/uber-problems-africa-expansion). Despite a host of clone companies trying to take Uber’s spot, the company still holds the crown the the highest number of active users (Oct. 2017).</p><p>What can twitter tell us about their footprint</p>
+					
+				</div>
+			</div>
+			<div class="row" id="team">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>Team</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row row-bottom-padded-lg">
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">Melvin G</h3>
+								<div class="position">C.T.O</div>
+								<p>The person who codes everything</p>
+								<p>"If I make DP with Test 2, I'm not doing work"</p>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/person3.jpg" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">Justin M</h3>
+								<div class="position">C.E.O</div>
+								<p>The person who adds everything</p>
+								<p>"That's basically our project, we're done."</p>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/person4.jpg" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">Bathande N</h3>
+								<div class="position">C.O.O</div>
+								<p>This person who questions everything</p>
+								<p>"Guys, this is a 50% project."</p>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-our-services" data-section="services">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">LINKS</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>Using the Social Graph to quantify and analyze social media data</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
+						<h3>Statistics</h3>
+						<p><a href="/annual-sales-and-website-traffic">Simple Visualizations of Data</a></p>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon colored-2"><span><i class="icon-screen-desktop"></i></span></div>
+						<h3>Database</h3>
+						<p><a href="http://localhost:7474/browser/">Neo4J</a></p>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box to-animate">
+						<div class="icon colored-3"><span><i class="icon-eye"></i></span></div>
+						<h3>Influences</h3>
+						<p><a href="/influences">Conclusions made from results</a></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-features" data-section="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-features-1">Features</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
+							<h3>Using the Social Graph, we set out to find if we could answer the following questions</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-present"></i></div>
+					<div class="fh5co-desc">
+						<h3>Perception</h3>
+						<p>What is the real online perception of Uber (vs Taxify)?</p>
+					</div>	
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-eye"></i></div>
+					<div class="fh5co-desc">
+						<h3>Campaigns</h3>
+						<p>Which Uber marketing campaigns received greatest support (vs Taxify campaigns)</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-crop"></i></div>
+					<div class="fh5co-desc">
+						<h3>Controversy</h3>
+						<p>Which Uber controversies garnered greater outcry (vs Taxify)</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-speedometer"></i></div>
+					<div class="fh5co-desc">
+						<h3>Historical</h3>
+						<p>How has perception changed over time</p>
+					</div>	
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-heart"></i></div>
+					<div class="fh5co-desc">
+						<h3>Reactions</h3>
+						<p>How do people react to people reacting (clusters)</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="icon-umbrella"></i></div>
+					<div class="fh5co-desc">
+						<h3>Predictions</h3>
+						<p>What can we do to predict the future</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-testimonials" data-section="testimonials">		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">What people are saying about us...</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>Using the Social Graph to quantify and analyze social media data</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Awesome project, I should've done double COMP&rdquo;</p>
+						</blockquote>
+						<p class="author">Random Person<a href="http://freehtml5.co/" target="_blank"></a> <span class="subtext">Student</span></p>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Share the code!&rdquo;</p>
+						</blockquote>
+						<p class="author">Yuvika<a href="http://freehtml5.co/" target="_blank"></a> <span class="subtext">Student</span></p>
+					</div>
+					
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;This presentation went on longer than it should have&rdquo;</p>
+						</blockquote>
+						<p class="author">Luke<a href="#"></a> <span class="subtext">Awesomeness Enthusiast</span></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2017<br> Final Year Project for <a href="http://freehtml5.co/" target="_blank">COMP301</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

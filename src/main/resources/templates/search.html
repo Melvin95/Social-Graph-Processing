@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Searching Twitter</title>
+	</head>
+	<body>
+		<h3>Hello !</h3>
+		
+		<h4>These are your results:</h4>
+		
+		<ul>
+			<li th:each="tweet:${tweetList}" th:text="${tweet.text}"></li>
+		</ul>
+	</body>
+</html>
